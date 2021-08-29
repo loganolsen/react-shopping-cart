@@ -6,7 +6,7 @@ import { Drawer, LinearProgress, Grid, Badge } from '@material-ui/core';
 import Item from './components/Item/Item';
 import Cart from './components/Cart/Cart';
 import { AddShoppingCart } from '@material-ui/icons';
-import { Wrapper, StyledButton } from './App.styles';
+import { Wrapper, StyledButton, StyledHeading } from './App.styles';
 
 // Types
 export type CartItemType = {
@@ -67,6 +67,7 @@ const App = () => {
           <AddShoppingCart />
         </Badge>
       </StyledButton>
+      <StyledHeading>Shopping Cart Demo</StyledHeading>
       <Grid container spacing={3}>
         {data?.map((item) => (
           <Grid item key={item.id} xs={12} sm={4}>
